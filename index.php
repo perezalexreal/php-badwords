@@ -1,10 +1,10 @@
 <?php 
 
-$variable = 'variabile php';
+$variable = 'Questo è una variabile php';
 
 $variable_length = strlen($variable);
 
-$variable_censure = $_GET('censure');
+$variable_censure = $_GET['censure'];
 
 $string_censure =  str_replace($variable_censure, '*' , $variable);
 
@@ -23,7 +23,7 @@ $string_censure =  str_replace($variable_censure, '*' , $variable);
 <body>
     
 
-<h1> Questo è una <?php echo $variable ?> </h1>
+<h1>  <?php echo $variable ?> </h1>
 <h2>   <?php echo $string_censure ?>  </h2>
 <p>  <?php echo $variable_length ?> </p>
 
